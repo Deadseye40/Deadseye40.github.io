@@ -1,0 +1,113 @@
+/* CSS Document 
+body {
+	background-color: aqua;
+	color: red;
+}
+p {
+		color: mediumorchid;
+		font-size: 21px;
+	}
+h1 {
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	
+}
+.lol {
+	color: black;
+	font-family:Copperplate;
+}
+.kek {
+	color:darkorange;
+}
+*/
+/* ---------------------------------------------------------------------------------------------------------
+Basic Structure
+-----------------------------------------------------------------------------------------------------------*/
+#wrapper {
+	width: 960px;
+	padding: 5px;
+	margin: 20px auto;
+	
+}
+
+#header {
+	height: 100px;
+	
+}
+
+#sidebar {
+	float: left;
+	width: 300px;
+	
+}
+
+#content {
+	float: right;
+	width: 600px;
+	
+}
+
+#footer {
+	clear:both;
+	
+}
+
+/* ---------------------------------------------------------------------------------------------------------
+Colors and Fonts
+color.adobe.com
+
+#FFBDAA
+#AAFFE7
+#AAB7FF
+#E8FFC8
+-----------------------------------------------------------------------------------------------------------*/
+body {
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: #AAFFE7;
+	/*background-color: #C8E3FF;*/
+	background-image: url("../images/luigi.jpeg");
+	background-size:100% 200%;
+	background-repeat:no-repeat;
+	
+	
+}
+
+#header, #sidebar, #content, #footer {
+	background-color:rgba(245,213,255,0.90);
+	margin-bottom: 4px;
+	border: double;
+	border-radius: 8px;
+	border-color: gray;
+	padding-left: 4px;
+	padding-right: 4px;
+	
+}
+/*------------------------------------------------------------------------------------
+
+Responsive Design
+
+-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width:980px){
+	
+
+}
+
+@media screen and (max-width:700px){
+	
+
+}
+
+@media screen and (max-width:480px){
+	
+
+}
+
+/* Phones */
+@media only screen
+	and (min-device-width: 320px)
+	and (max-device-width: 560px){
+		
+}
+	
+
+

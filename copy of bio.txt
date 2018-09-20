@@ -1,0 +1,2 @@
+<h1 align=center>About Me</h1>
+<p style="margin-left: 50px"> Hello! My name is Nathan Weng. I am attending in <em>Valley Christian JH</em> and enjoys playing Fortnite and Warframe. Click <a href="https://www.epicgames.com/site/en-US/home">here</a> to install Fortnite so I can have friends to play with. Click <a href="https://www.warframe.com/landinghere">here</a> to install Warframe too.I also enjoy watching youtube and here is the <a href="//https://www.youtube.com/">link</a>
