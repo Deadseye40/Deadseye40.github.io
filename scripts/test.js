@@ -1,7 +1,4 @@
 // JavaScript Document
-function greeting() {
-	alert("I'm fine. Thankyou.");
-}
 function Vector(x, y, z) {
   this.x = x;
   this.y = y;
