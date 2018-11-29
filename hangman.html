@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hangman</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		// words//
+		var lives = 2;
+		var words = [
+		"abandon", "ability", "able", "abortion", "about", "above", "abroad", "absence", "absolute", "absolutely", "absorb"];
+		
+		//picks the words//
+		var word = words[Math.floor(Math.random() * words.length)];
+		
+		//Set up the answer array//
+		
+		var answer_array = [];
+		for(var i = 0; i < word.length; i++) {
+			answer_array[i] = "_";
+		}
+		var remaining_letters = word.length;
+		
+		//The game loop//
+		while(remaining_letters > 0){
+			//show player their progress//
+			alert(answer_array.join(" "));
+			
+		var guess = prompt("Guess a letter, or click Cancel to stop the game.");
+			guess = guess.toLowerCase();
+		
+		if(guess === null){
+			//Exit the game loop//
+		break;
+		} else if (guess.length !== 1){
+			alert("Please guess a single letter.");
+		} else {
+			//Update the game with the guess
+			var counter = 0;
+			for (var j=0; j < word.length; j++){
+				if (word[j] === guess) {
+					answer_array[j] = guess;
+					remaining_letters--;}
+				//else if (answer_array[j] !== guess)//
+				//alert("NOT ALLOWED! MORE THAN ONE WORD!");
+				else {
+					counter++;
+				}
+			}
+			
+			if(counter == word.length)
+			{
+					lives--;
+					alert("You have " + lives + " lives remaining")
+				}
+					if(lives == 0){
+			alert("Sorry! Good luck next time!");
+			Application.close();
+		}
+		}
+		}
+
+	
+		
+		alert(answer_array.join(" "));
+		alert("Good Job! The answer was " + word);
+	</script>
+</body>
+</html>

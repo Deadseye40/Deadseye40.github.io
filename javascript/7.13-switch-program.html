@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>7.13 - switch program</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		var program = prompt("Enter F to convert Fahrenheit to Celsius\n\nEnter C to convert Celsius to Fahrenheit\n\nEnter D to convert Dollar to Yen\n\nEnter Y to convert Yen to Dollar");
+		
+		
+		switch(program) {
+			case "F": 
+				var f = prompt("Enter the amount of Fahrenheit you want to convert!")
+				var c = eval((f-32)*5/9);
+				document.write(c);
+			break;
+				
+			case "C": var cel= prompt("Enter the amount of celsius you want to convert!")
+			var faren = eval((cel*9/5)+32);
+				document.write(faren)
+				
+			break;
+			case "D": var dollar1 = prompt("Enter the amount of USD you want to convert to yen.")
+	var yen1 = dollar1*112.18;
+	document.write("You have " +yen1 + " yen.") 
+			
+				break;
+			case "Y": var yen = prompt("How much yen do you want to convert to USD?")
+			var dollar = eval(yen*0.0088)
+			document.write(dollar)
+				break;
+			default: document.write("Please enter a proper letter!")
+				break;
+				
+		}
+		
+	</script>
+</body>
+</html>
