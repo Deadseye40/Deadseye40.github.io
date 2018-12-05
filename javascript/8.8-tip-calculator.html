@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.8 - Tip Calculator</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+		function tipCalc(bill, tipPercentage) {
+			return bill * tipPercentage;
+		}
+
+		// ask user for how much the bill was
+		var b = prompt("How much was the bill?");
+		Number(b);
+		// ask the user how much they want to tip
+		var t = prompt("How much percent do you want to tip. Type 0.something");
+		Number(t);
+
+		// calculate and print the dollar amount of their tip:
+		document.write(tipCalc(b, t));
+	</script>
+</body>
+</html>

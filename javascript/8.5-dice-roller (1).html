@@ -9,9 +9,12 @@
 	<script type="text/javascript">
 		function diceRoller() {
 			// calculate roll
-			var roll = Math.ceil(Math.random() * 6);
+			for (var i = 0; i < 20; i++) {
+				var roll = Math.ceil(Math.random() * 6);
+				document.write(roll + "<br>")
+			}
 
-		
+
 
 			// return result
 return roll
